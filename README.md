@@ -23,11 +23,11 @@ npx hardhat verify --network mumbai <contract address>
 ```
 
 Smart contract
-[0xF976871c7e02c0f8A873a800B26DB18EA389dB73](https://mumbai.polygonscan.com/address/0xF976871c7e02c0f8A873a800B26DB18EA389dB73)
+[0x070901F0535EBA1b45311dC70609Fee95c29646A](https://mumbai.polygonscan.com/address/0x070901F0535EBA1b45311dC70609Fee95c29646A)
 
 [OpenSea Testnet](https://testnets.opensea.io/)
 
-[KPRIET Collection on OpenSea Testnet](https://testnets.opensea.io/)
+[KPRIET Collection on OpenSea Testnet](https://testnets.opensea.io/collection/workshop-at-kpriet-college-for-insights-about-bl-1)
 
 
 

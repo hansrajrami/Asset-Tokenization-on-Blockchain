@@ -54,6 +54,6 @@ contract KPRIET is Initializable, ERC721Upgradeable, OwnableUpgradeable {
     }
 
     function contractURI() public pure returns (string memory) {
-        return "https://gist.githubusercontent.com/hansrajrami/360c214a41eaba21d0b1fdcaacc48d79/raw/df3c8ef731a5252f065a53a5d9446e558b1bc48f/kpriet-nft-demo.json";
+        return "https://gist.githubusercontent.com/hansrajrami/360c214a41eaba21d0b1fdcaacc48d79/raw/a13fd07e1444606df2c501f9720c9a1453fa6ded/kpriet-nft-demo.json";
     }
 }
