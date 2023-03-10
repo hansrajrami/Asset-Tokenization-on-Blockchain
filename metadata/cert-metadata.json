@@ -1,0 +1,39 @@
+{
+  "name": "NFT Certificate for participating in Blockchain Training insights",
+  "image": "ipfs://QmYvEfQMBfSrqEK8w1YryhCZSMgbEGmsPAzg4q1QJaCYUG",
+  "description": "This NFT certificate serves as proof of completion for the Workshop on Blockchain Technology and Adoption Training",
+  "attributes": [
+    {
+      "trait_type": "Issuer",
+      "value": "KPRIET College"
+    },
+    {
+      "trait_type": "Issuer Website",
+      "value": "https://kpriet.ac.in/"
+    },
+    {
+      "trait_type": "Issuer Email",
+      "value": "contact@kpriet.ac.in"
+    },
+    {
+      "trait_type": "Recipient",
+      "value": "Hansraj Rami"
+    },
+    {
+      "trait_type": "Training details",
+      "value": "Blockchain Technology and Adoption Training"
+    },
+    {
+      "trait_type": "Training date",
+      "value": "11 March 2023"
+    },
+    {
+      "trait_type": "Training Duration",
+      "value": "90 Minutes"
+    },
+    {
+      "trait_type": "Topics covered in training",
+      "value": "Blockchain Technology Insights and it's use cases in Real world"
+    }
+  ]
+}

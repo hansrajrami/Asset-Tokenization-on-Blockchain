@@ -1,0 +1,35 @@
+{
+  "name": "Hourse #1 Ahmedabad Down Town",
+  "image": "ipfs://QmYrg9R9rMh8eZepW92JucmsZuJTYtKpGA8bsvDadehgU8",
+  "description": "This NFT proves the ownership of the house #1 in the Ahmedabad Down town area",
+  "attributes": [
+    {
+      "trait_type": "Issuer",
+      "value": "Indian Government"
+    },
+    {
+      "trait_type": "Issuer Website",
+      "value": "https://www.99acres.com/"
+    },
+    {
+      "trait_type": "Recipient",
+      "value": "Hansraj Rami"
+    },
+    {
+      "trait_type": "Bunglow Details",
+      "value": "3 BHK, 2 floors and Terrace"
+    },
+    {
+      "trait_type": "Land Area",
+      "value": "300 Square Meters"
+    },
+    {
+      "trait_type": "Training date",
+      "value": "17 February 2023"
+    },
+    {
+      "trait_type": "Price",
+      "value": "20 Crore"
+    }
+  ]
+}
