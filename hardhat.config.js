@@ -8,21 +8,24 @@ const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.17",
-  // defaultNetwork: "mumbai",
+  solidity: "0.8.20",
+  defaultNetwork: "amoy",
   networks: {
-    polygon_testnet: {
+    amoy: {
       url: `https://polygon-amoy.infura.io/v3/${INFURA_API_KEY}`,
       accounts: [ETH_PRIVATE_KEY]
     }
   },
   etherscan: {
     apiKey: {
-      polygon_testnet: process.env.ETHERSCAN_API_KEY,
+      amoy: ETHERSCAN_API_KEY,
+    },
+    sourcify: {
+      enabled: true
     },
     customChains: [
       {
-        network: "polygon_testnet",
+        network: "amoy",
         chainId: 80002,
         urls: {
           apiURL: "https://www.oklink.com/api/explorer/v1/contract/verify/async/api/polygonAmoy",

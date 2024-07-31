@@ -4,13 +4,13 @@ async function main() {
     const [deployer] = await ethers.getSigners();
 
     console.log("Deploying contracts with the account:", deployer.address);
-    console.log("Account balance:", (await deployer.getBalance()).toString());
+    console.log("Account balance:", (await deployer.provider.getBalance(deployer.address)).toString());
 
     const irCert = await ethers.getContractFactory("MYTOKEN");
     const irCertContract = await upgrades.deployProxy(irCert, ["MYTOKEN NFT Demo", "MYTOKEN", "ipfs://"]);
-    await irCertContract.deployed();
+    await irCertContract.waitForDeployment();
 
-    console.log("MYTOKEN Smart contract address:", irCertContract.address);
+    console.log("MYTOKEN Smart contract address:", await irCertContract.getAddress());
 }
 
 main()

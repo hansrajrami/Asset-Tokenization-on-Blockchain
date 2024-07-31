@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const ETH_PRIVATE_KEY = process.env.ETH_PRIVATE_KEY;
-const contractAddress = '0x402cF01DA732580A1B07Db5758264FC26a1dFF57';
+const contractAddress = '';
 const ABI = require('../artifacts/contracts/ERC721.sol/IRcertificate.json').abi;
 
 const provider = new ethers.providers.JsonRpcProvider(`https://polygon-mumbai.infura.io/v3/11c79160811d467fad09bb62ed12d7eb`);
