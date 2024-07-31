@@ -1,11 +1,11 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("KPRIET NFT Demo", () => {
+describe("MYTOKEN NFT Demo", () => {
     it("Only admin can assign the IR Certificate", async () => {
         const [admin, participant1, participant2] = await ethers.getSigners();
 
-        const irCert = await ethers.getContractFactory("KPRIET");
+        const irCert = await ethers.getContractFactory("MYTOKEN");
         const irCertContract = await irCert.deploy();
 
         await expect(
@@ -16,11 +16,11 @@ describe("KPRIET NFT Demo", () => {
     it("After assigning the Certificate shop owner should receive an NFT", async () => {
         const [admin, participant1, participant2] = await ethers.getSigners();
 
-        const irCert = await ethers.getContractFactory("KPRIET");
+        const irCert = await ethers.getContractFactory("MYTOKEN");
         const irCertContract = await irCert.deploy();
 
         // Initialize contract
-        await irCertContract.connect(admin).initialize("KPRIET NFT Demo", "KPRIET", "ipfs://");
+        await irCertContract.connect(admin).initialize("MYTOKEN NFT Demo", "MYTOKEN", "ipfs://");
 
         const licenseId = await irCertContract.connect(admin).issueCertificate(participant1.address, "Cert #")
         const owner = await irCertContract.ownerOf(licenseId.value);

@@ -6,11 +6,11 @@ async function main() {
     console.log("Deploying contracts with the account:", deployer.address);
     console.log("Account balance:", (await deployer.getBalance()).toString());
 
-    const irCert = await ethers.getContractFactory("KPRIET");
-    const irCertContract = await upgrades.deployProxy(irCert, ["KPRIET NFT Demo", "KPRIET", "ipfs://"]);
+    const irCert = await ethers.getContractFactory("MYTOKEN");
+    const irCertContract = await upgrades.deployProxy(irCert, ["MYTOKEN NFT Demo", "MYTOKEN", "ipfs://"]);
     await irCertContract.deployed();
 
-    console.log("KPRIET Smart contract address:", irCertContract.address);
+    console.log("MYTOKEN Smart contract address:", irCertContract.address);
 }
 
 main()

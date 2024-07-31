@@ -8,7 +8,7 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
 
-contract KPRIET is Initializable, ERC721Upgradeable, OwnableUpgradeable {
+contract MYTOKEN is Initializable, ERC721Upgradeable, OwnableUpgradeable {
     using CountersUpgradeable for CountersUpgradeable.Counter;
     CountersUpgradeable.Counter private _tokenIds;
     string public baseURI;
@@ -54,6 +54,6 @@ contract KPRIET is Initializable, ERC721Upgradeable, OwnableUpgradeable {
     }
 
     function contractURI() public pure returns (string memory) {
-        return "https://gist.githubusercontent.com/hansrajrami/360c214a41eaba21d0b1fdcaacc48d79/raw/a13fd07e1444606df2c501f9720c9a1453fa6ded/kpriet-nft-demo.json";
+        return "https://gist.githubusercontent.com/hansrajrami/f514f1423047d89305c09889b1fa623f/raw/4fef0d18265704377d16fa2f3ae1280bbd7e1167/asset-tokenization-blockchain-demo.json";
     }
 }

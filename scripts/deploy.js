@@ -4,10 +4,10 @@ const main = async() => {
     console.log("Deploying contracts with the account:", deployer.address);
     console.log("Account balance:", (await deployer.getBalance()).toString());
 
-    const irCert = await ethers.getContractFactory("KPRIET");
+    const irCert = await ethers.getContractFactory("MYTOKEN");
     const irCertContract = await irCert.deploy();
 
-    console.log("KPRIET NFT Smart Contract address:", irCertContract.address);
+    console.log("MYTOKEN NFT Smart Contract address:", irCertContract.address);
 }
 
 main()

@@ -5,15 +5,15 @@
   "attributes": [
     {
       "trait_type": "Issuer",
-      "value": "KPRIET College"
+      "value": "MYTOKEN College"
     },
     {
       "trait_type": "Issuer Website",
-      "value": "https://kpriet.ac.in/"
+      "value": "https://example.com/"
     },
     {
       "trait_type": "Issuer Email",
-      "value": "contact@kpriet.ac.in"
+      "value": "contact@example.com"
     },
     {
       "trait_type": "Recipient",

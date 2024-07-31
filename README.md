@@ -1,4 +1,4 @@
-# KPRIET NFT Demo 
+# MYTOKEN NFT Demo 
 
 Compile
 ```
@@ -12,14 +12,14 @@ npx hardhat test
 
 Deploy
 ```
-npx hardhat run scripts/deployProxy.js --network mumbai
+npx hardhat run scripts/deployProxy.js --network polygon_testnet
 ```
 
 [Polygon Mumbai Testnet Block Explorer link](https://mumbai.polygonscan.com/)
 
 Verify
 ```
-npx hardhat verify --network mumbai <contract address>
+npx hardhat verify --network polygon_testnet <contract address>
 ```
 
 Smart contract
@@ -27,7 +27,5 @@ Smart contract
 
 [OpenSea Testnet](https://testnets.opensea.io/)
 
-[KPRIET Collection on OpenSea Testnet](https://testnets.opensea.io/collection/workshop-at-kpriet-college-for-insights-about-bl-1)
-
-
+[MYTOKEN Collection on OpenSea Testnet](https://testnets.opensea.io/collection/workshop-at-kpriet-college-for-insights-about-bl-1)
 

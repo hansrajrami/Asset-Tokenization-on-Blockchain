@@ -11,14 +11,24 @@ module.exports = {
   solidity: "0.8.17",
   // defaultNetwork: "mumbai",
   networks: {
-    mumbai: {
-      url: `https://polygon-mumbai.infura.io/v3/${INFURA_API_KEY}`,
+    polygon_testnet: {
+      url: `https://polygon-amoy.infura.io/v3/${INFURA_API_KEY}`,
       accounts: [ETH_PRIVATE_KEY]
     }
   },
   etherscan: {
     apiKey: {
-      polygonMumbai: ETHERSCAN_API_KEY,
-    }
+      polygon_testnet: process.env.ETHERSCAN_API_KEY,
+    },
+    customChains: [
+      {
+        network: "polygon_testnet",
+        chainId: 80002,
+        urls: {
+          apiURL: "https://www.oklink.com/api/explorer/v1/contract/verify/async/api/polygonAmoy",
+          browserURL: "https://www.oklink.com/amoy"
+        },
+      }
+    ]
   },
 };
