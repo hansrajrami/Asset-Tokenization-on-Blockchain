@@ -12,20 +12,20 @@ npx hardhat test
 
 Deploy
 ```
-npx hardhat run scripts/deployProxy.js --network polygon_testnet
+npx hardhat run scripts/deployProxy.js --network amoy
 ```
 
 [Polygon Mumbai Testnet Block Explorer link](https://mumbai.polygonscan.com/)
 
 Verify
 ```
-npx hardhat verify --network polygon_testnet <contract address>
+npx hardhat verify --network amoy <contract address>
 ```
 
 Smart contract
-[0x070901F0535EBA1b45311dC70609Fee95c29646A](https://mumbai.polygonscan.com/address/0x070901F0535EBA1b45311dC70609Fee95c29646A)
+[0x070901F0535EBA1b45311dC70609Fee95c29646A](https://www.oklink.com/amoy/address/0x08EEbC73eD3198dCf6B6FA61ECAC3c2CBfC8A726/contract)
 
-[OpenSea Testnet](https://testnets.opensea.io/)
+[OpenSea Testnet](https://testnet.rarible.com/)
 
-[MYTOKEN Collection on OpenSea Testnet](https://testnets.opensea.io/collection/workshop-at-kpriet-college-for-insights-about-bl-1)
+[MYTOKEN Collection on Rarible Testnet](https://testnet.rarible.com/collection/polygon/0x08eebc73ed3198dcf6b6fa61ecac3c2cbfc8a726/items)
 
