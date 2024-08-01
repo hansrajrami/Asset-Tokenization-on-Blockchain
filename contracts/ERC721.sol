@@ -31,7 +31,7 @@ contract MYTOKEN is Initializable, ERC721Upgradeable, OwnableUpgradeable {
         _safeMint(owner, newTokenID);
         _tokenURIs[newTokenID] = _tokenURI;
         
-        _currentTokenID = newTokenID + 3;
+        _currentTokenID = newTokenID + 1;
         return newTokenID;
     }
 
