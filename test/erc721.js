@@ -9,7 +9,7 @@ describe("MYTOKEN NFT Demo", () => {
         const irCertContract = await irCert.deploy();
 
         await expect(
-            irCertContract.connect(participant1).issueCertificate(participant1.address, "Cert #")
+            irCertContract.connect(participant1).createAsset(participant1.address, "Cert #")
         ).to.be.revertedWith("Ownable: caller is not the owner");
     });
 
@@ -22,7 +22,7 @@ describe("MYTOKEN NFT Demo", () => {
         // Initialize contract
         await irCertContract.connect(admin).initialize("MYTOKEN NFT Demo", "MYTOKEN", "ipfs://");
 
-        const licenseId = await irCertContract.connect(admin).issueCertificate(participant1.address, "Cert #")
+        const licenseId = await irCertContract.connect(admin).createAsset(participant1.address, "Cert #")
         const owner = await irCertContract.ownerOf(licenseId.value);
         expect(
             await irCertContract.ownerOf(licenseId.value)).to.equal(participant1.address

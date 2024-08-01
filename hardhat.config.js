@@ -9,7 +9,7 @@ const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.20",
-  defaultNetwork: "amoy",
+  // defaultNetwork: "amoy",
   networks: {
     amoy: {
       url: `https://polygon-amoy.infura.io/v3/${INFURA_API_KEY}`,
